@@ -1,0 +1,12 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: rgb(196, 196, 196);
+}
+select {
+    border: 1px;
+    color: rgb(102, 102, 102);;
+}
+p {
+    font-weight: bold;
+}
