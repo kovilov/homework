@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Form JS</title>
+</head>
+<body>
+    <form id="form"> 
+        <!-- <div>
+            <label for="">Text field</label>
+            <input 
+                type="text" 
+                id="first_text"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="">Email</label>
+            <input 
+                type="email" 
+                id="second_text"
+                pattern=".+@gmail\.com"
+                title="Email"  
+                required
+            />
+        </div>
+
+        <div>
+            <label for="">Text field with min and max lenght</label>
+            <input 
+                type="text" 
+                id="three_text" 
+                title="Some text"  
+                minlength="5"
+                maxlength="10"
+                required
+            />
+        </div>
+      
+        <div>
+            <label for="">Password (containt one capital char, one letter char and one number)</label>
+            <input 
+                type="password" 
+                id="four_text" 
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                oninvalid="this.setCustomValidity('')"  
+                minlength="8"
+                maxlength="8"
+                required
+            />
+        </div>
+            
+        <div>
+            <label for="">Password (containt 8 characters one capital char, one letter char and one number)</label>
+            <input 
+                type="password" 
+                id="five_text" 
+                title="Repeat password" 
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                minlength="8"
+                maxlength="8"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="">Week</label>
+            <input 
+                type="date" 
+                id="six_text"
+                min="2022-18"
+                max="2022-26"
+                required
+            />
+        </div>
+
+        <div>
+            <label for="">Time</label>
+
+            <input 
+                type="time" 
+                id="seven_text" 
+                min="9:00"
+                max="18:00"
+                required
+            />
+        </div>
+
+        </hr> -->
+
+        <div>
+            <label for="">ZIP : </label>
+            <input 
+                type="text" 
+                id="zip"
+                pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$"
+                required
+            />
+            <label for="">Country : </label>
+            <select id="Country">
+              <option value="lv">Latvia</option>
+              <option value="ru">Russia</option>
+              <option value="ua">Ukraine</option>
+              <option value="eng">England</option>
+            </select>
+        </div>
+
+        <p<input id="submit" type="submit" class="button" value="Check">
+      </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
